@@ -15,10 +15,10 @@ function Images() {
   return (
     <>
     <div className='latest'>
-      <Body img1={lprd1} title="YELLOW NOCTURNAL SWEATSHIRT" price="4995"/>
-      <Body img1={lprd2} title="BLACK NOCTURNAL HOODIE" price="4995"/>      
-      <Body img1={lprd3} title="OLIVE NOCTURNAL HOODIE" price="7495"/>
-      <Body img1={lprd4} title="BLACK NOCTURNAL SWEATSHIRT" price="9995"/>
+      <Body img1={lprd1} title1="YELLOW NOCTURNAL SWEATSHIRT" price1="4995"/>
+      <Body img1={lprd2} title1="BLACK NOCTURNAL HOODIE" price1="4995"/>      
+      <Body img1={lprd3} title1="OLIVE NOCTURNAL HOODIE" price1="7495"/>
+      <Body img1={lprd4} title1="BLACK NOCTURNAL SWEATSHIRT" price1="9995"/>
     </div>
     <div className='product'>
       <Body img={prd1} title="BLACK JOGGERS" price="4995"/>
