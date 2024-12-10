@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaRupeeSign } from "react-icons/fa";
+// import { FaRupeeSign } from "react-icons/fa";
 
 // import Images from './Components/Images'
 
@@ -17,20 +17,27 @@ function Body(props) {
   return (
     <>
     
-    <div className='latestprd'>
+        
 
-      {props.img1? ( <img src={props.img1} alt="" />):""}
-         {props.title1 ? (<p>{props.title1}</p>) : ""}  
-         {props.price1 ? (<p><FaRupeeSign />{props.price1}</p>) : ""}  
-           
+         <div className='latestprd'>
+         {/* <img src={props.data[0].src} alt="" /> */}
+         {/* {props.title1 ? (<p>{props.title1}</p>) : ""}  
+         {props.price1 ? (<h5>RS.{props.price1}</h5>) : ""}   */}
+           {props.data.map((obj)=>{
+            return(
+              <div className='laprd'>
+                           <img src={obj.src} alt="" />
+              </div>
+            )
+           })}
          </div>
     
-    
+{/*     
          <div className='prd'>
           {props.img?(<img src={props.img} alt="" />):""}
           {props.title ? (<p>{props.title}</p>) : ""}  
-         {props.price ? (<p><FaRupeeSign />{props.price}</p>) : ""}  
-         </div>
+         {props.price ? (<h5>RS.{props.price}</h5>) : ""}  
+         </div> */}
         
          </>
     
